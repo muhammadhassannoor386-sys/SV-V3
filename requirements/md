@@ -1,0 +1,10 @@
+| Requirement ID | Description | Priority |
+| ---            | ---         | ---      |
+| REQ-NAV-01 | The robot must autonomously navigate sidewalks and pedestrian pathways using LiDAR, cameras, and ultrasonic sensors to avoid static and dynamic obstacles.                 | High |
+| REQ-SEC-02 | The cargo compartment must remain securely locked during transit and can only be unlocked by the recipient via a secure PIN or mobile app token.                           | High |
+| REQ-BAT-03 | The onboard power system must provide a minimum continuous operating range of 8 hours or 30 miles on a single charge under normal weather conditions.                      | High |
+| REQ-SAF-04 | The robot must feature an easily accessible physical emergency stop button that immediately halts all motor functions upon activation.                                     | High |
+| REQ-COM-05 | The robot must maintain real-time cellular connectivity (4G/5G) for remote telemetry, fleet tracking, and status updates to the central dispatch server.                  | Medium |
+| REQ-ENV-06 | The chassis and internal electronics must be weather-resistant (IP54 rated or higher) to operate safely in light rain, snow, and temperatures ranging from -10°C to 40°C. | Medium |
+| REQ-PAY-07 | The cargo compartment must support a payload volume of at least 2 cubic feet and a maximum weight capacity of 20 kg (44 lbs).                                             | Medium |
+| REQ-UI- 08 | The robot must include an external LED matrix or touchscreen interface to communicate its immediate operational status (e.g., yielding, delivering, paused) to pedestrians. | Low |
