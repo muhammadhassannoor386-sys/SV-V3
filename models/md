@@ -1,0 +1,11 @@
+| State ID     | State Name   |   State Description |     Entry Condition   |   Exit Condition |
+| :---         | :---         |    :---             |     :---              |     :---         |
+| S01 | Idle / Standby | Robot is parked at the home station, fully powered on, and waiting for a new delivery dispatch order. | System boot-up complete, or a previous delivery cycle has successfully concluded and docked. | A new delivery task is received from the central fleet management server. |
+| S02 | Loading | Robot cargo compartment is open for staff to place the package. Verifies weight and secures the compartment.| Robot has arrived at the vendor/fulfillment bay and acknowledged the pickup task. | Package placed, compartment door securely locked, and weight sensor validation passed. |
+| S03 | Navigating to Destination | Robot plans a route and autonomously travels toward the customer drop-off location using sensors and GPS. | Package loaded successfully and navigation route is initialized/validated. | Robot arrives within the target delivery radius of the recipient's location. |
+| S04 | Arrived / Awaiting Recipient | Robot has reached the destination, sounds a notification, and sends an alert to the customer to collect the item. | Successful arrival at destination coordinates and safe stopping confirmation. | Recipient enters the correct PIN/unlocks via app, OR a collection timeout expires. |
+| S05 | Unloading | Compartment unlocks or opens so the customer can safely retrieve their specific package. | Recipient authentication successfully verified. | Package removed (verified by weight drop) and compartment door closed. |
+| S06 | Returning to Base | Robot navigates back to the central hub or nearest charging station when idle or low on battery. | Delivery successfully completed, task canceled, or battery level drops below the return threshold. | Robot successfully docks at the charging station and establishes a power connection. |
+| S07 | Error / Recovery | Safe-mode state triggered by severe sensor blockage, hardware failure, system crash, or physical tampering. | Obstacle timeout exceeded, hardware fault detected, or emergency stop activated. | Remote operator intervention, manual reset, or successful error clearing. |
+
+```
